@@ -4,7 +4,7 @@
 // FILE KONFIGURASI KONSTANTA SISTEM
 // ===========================================
 // File ini berisi definisi konstanta yang digunakan secara global
-// di seluruh aplikasi Pool Snack System.
+// di seluruh aplikasi Pool Snack System..
 // Author: [Nama Anda/Tim]
 // Last Modified: [Tanggal]
 // ===========================================
