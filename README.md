@@ -78,7 +78,7 @@ Pool Snack adalah solusi digital untuk modernisasi operasional F&B di arena bill
 
 Aplikasi ini dibangun menggunakan pola arsitektur MVC (Model–View–Controller) Monolitik yang terstruktur:
 
-mermaid
+```mermaid
 graph TD
     User["Browser / Client"] -->|HTTP Request| Router["Routing System"]
 
@@ -99,7 +99,7 @@ graph TD
     View -->|Rendered HTML| Controller
     Controller -->|HTTP Response| User
     ...
-
+```
 
 ## 🔄 METODOLOGI & SPRINT LOG
 
@@ -221,10 +221,10 @@ Simak demonstrasi lengkap penggunaan aplikasi Pool Snack di YouTube:
 
 ### 🚧 Keterbatasan Sistem (v1.0)
 Berikut adalah batasan teknis saat ini yang perlu diketahui:
-1.  *Notifikasi Real-time:* Dashboard Kasir menggunakan metode auto-refresh (polling) setiap 30 detik untuk cek pesanan baru, belum menggunakan WebSocket.
-2.  *Verifikasi Pembayaran:* Validasi pembayaran QRIS masih manual (Kasir harus cek mutasi/bukti transfer), belum terintegrasi otomatis dengan Payment Gateway (Midtrans).
-3.  *Cetak Struk:* Menggunakan fitur Print Browser bawaan, belum mendukung Direct Printing ke printer thermal via Bluetooth/USB secara native.
-4.  *Multi-Bahasa:* Antarmuka sistem saat ini hanya tersedia dalam Bahasa Indonesia.
+1.  **Notifikasi Real-time:** Dashboard Kasir menggunakan metode *auto-refresh* (polling) setiap 30 detik untuk cek pesanan baru, belum menggunakan WebSocket.
+2.  **Verifikasi Pembayaran:** Validasi pembayaran QRIS masih manual (Kasir harus cek mutasi/bukti transfer), belum terintegrasi otomatis dengan Payment Gateway (Midtrans).
+3.  **Cetak Struk:** Menggunakan fitur *Print Browser* bawaan, belum mendukung *Direct Printing* ke printer thermal via Bluetooth/USB secara native.
+4.  **Multi-Bahasa:** Antarmuka sistem saat ini hanya tersedia dalam Bahasa Indonesia.
 
 ### 🔧 Fitur yang Belum Selesai (Roadmap)
 Rencana pengembangan untuk versi selanjutnya:
@@ -236,17 +236,17 @@ Rencana pengembangan untuk versi selanjutnya:
 
 ### 📋 Petunjuk Penggunaan Khusus
 
-*Untuk Kasir:*
-* Pastikan halaman *Dashboard Kasir* selalu terbuka di layar untuk memantau pesanan masuk.
-* Jika bukti pembayaran QRIS kurang jelas, Anda bisa klik tombol *"Lihat Bukti"* untuk memperbesar gambar.
-* Lakukan *Refresh Halaman* (F5) jika merasa ada pesanan yang belum muncul.
+**Untuk Kasir:**
+* Pastikan halaman **Dashboard Kasir** selalu terbuka di layar untuk memantau pesanan masuk.
+* Jika bukti pembayaran QRIS kurang jelas, Anda bisa klik tombol **"Lihat Bukti"** untuk memperbesar gambar.
+* Lakukan **Refresh Halaman** (F5) jika merasa ada pesanan yang belum muncul.
 
-*Untuk Admin:*
-* Saat menambahkan menu baru, pastikan ukuran gambar *tidak lebih dari 2MB* (Format JPG/PNG).
-* Disarankan melakukan *Download Laporan Harian* (PDF) setiap tutup operasional untuk arsip.
+**Untuk Admin:**
+* Saat menambahkan menu baru, pastikan ukuran gambar **tidak lebih dari 2MB** (Format JPG/PNG).
+* Disarankan melakukan **Download Laporan Harian** (PDF) setiap tutup operasional untuk arsip.
 
-*Untuk Pelanggan:*
-* Pastikan memilih *Nomor Meja* yang benar saat checkout agar pesanan tidak salah antar.
+**Untuk Pelanggan:**
+* Pastikan memilih **Nomor Meja** yang benar saat *checkout* agar pesanan tidak salah antar.
 * Simpan tangkapan layar bukti transfer QRIS sebelum mengunggahnya ke sistem.
 
 ## 📝 KETERANGAN TUGAS
